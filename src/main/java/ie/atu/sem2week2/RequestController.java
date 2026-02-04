@@ -2,6 +2,7 @@ package ie.atu.sem2week2;
 
 import org.springframework.web.bind.annotation.*;
 
+
 @RestController
 @RequestMapping
 public class RequestController {
