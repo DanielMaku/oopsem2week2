@@ -9,9 +9,13 @@ public class Person {
         this.age = age;
     }
 
-    public String getName() {
+    public Person() {
         this.name= "";
         this.age=0;
+    }
+
+    public String getName() {
+        return  name;
     }
 
     public void setName(String name) {
