@@ -24,4 +24,8 @@ public  String details(@RequestParam String name, @RequestParam Integer age)
 return "Hello " + name + " " + age;
 }
 
+@GetMapping("/person")
+public Person getPerson(){
+ Person person = new Person ("Daniel", 18);
+    return person;
 }
