@@ -1,9 +1,7 @@
 package ie.atu.sem2week2;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
 
 @RestController
 @RequestMapping
@@ -19,4 +17,11 @@ public String greetByName(@PathVariable String name)
 {
     return "Hello " + name;
 }
+
+@GetMapping("/details")
+public  String details(@RequestParam String name, @RequestParam Integer age)
+{
+return "Hello " + name + " " + age;
+}
+
 }
